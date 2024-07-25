@@ -68,3 +68,27 @@ Sparky(
      return await client.sendMessage(m.jid , {audio : song ,  mimetype : 'audio/mpeg'} , { quoted : m })
       
     })
+
+
+      Sparky(
+    {
+        name: "play",
+        fromMe: isPublic,
+        category: "downloader",
+        desc: "To download song"
+    },
+    async ({
+        m, client, args
+    }) => {
+      args = args || m.quoted?.text;
+        if (!args) return m.reply("_Enter Query !_")
+      let mes = await client.sendMessage(m.jid, { text : `_Searching..._` } , { quoted : m })
+   const res = await axios.get(`https://viper.xasena.me/api/v1/yta?query=${args}`)
+    let response = await res.data
+    let coverBuffer = await (await fetch(`${response.data.thumbnail}`)).buffer()
+     client.sendMessage(m.jid, { text : `_Downloading : ${response.data.title}_` , edit : mes.key })
+   const songbuff = await (await fetch(`${response.data.downloadUrl}`)).buffer()
+   const song = await AddMp3Meta(songbuff , coverBuffer , { title : response.data.title , artist : response.data.channel.name } )
+     return await client.sendMessage(m.jid , {audio : song ,  mimetype : 'audio/mpeg'} , { quoted : m })
+      
+    })
