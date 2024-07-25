@@ -37,17 +37,17 @@
     "AUDIO_DATA": {
       "description": "Enter Your Owner Name",
       "required": false,
-      "value": "X BOT MD;ASWIN SPARKY;https://i.imgur.com/fVCRCYG.jpeg"
+      "value": "sʟᴏᴛʏ ᴍᴅ;sɪʀ ɪʙʀᴀʜɪᴍ;https://telegra.ph/file/74599869170d374a38ae5.jpg"
     },
     "BOT_INFO": {
       "description": "Enter Your Owner Number",
       "required": false,
-      "value": "X-BOT-MD;ASWIN SPARKY;https://i.imgur.com/r3GZeiX.jpeg"
+      "value": "sʟᴏᴛʏ ᴍᴅ;sɪʀ ɪʙʀᴀʜɪᴍ;https://telegra.ph/file/74599869170d374a38ae5.jpg"
     },
     "ALWAYS_ONLINE": {
       "description": "Enter Your Bot Name",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     "WORK_TYPE": {
       "description": "Enter Your Mode Type public For Public Otherwise Type private",
@@ -57,7 +57,7 @@
     "AUTO_STATUS_VIEW": {
       "description": "If You Want To View Status Automatically, Type true. Otherwise, Type false",
       "required": false,
-      "value": "false"
+      "value": "true"
     }
   },
   "addons": [
