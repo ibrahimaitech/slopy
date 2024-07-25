@@ -43,13 +43,14 @@ Sparky(
                 timeZone: "Asia/Kolkata"
             })
             .split(",");
-            let menu = `•  owner : ${BOT_INFO.split(";")[1]}
-•  mode : ${WORK_TYPE}
-•  prefix : ${HANDLERS}
+            let menu = `╭─────────────━┈⊷ 
+•  👨‍💻 ᴏᴡɴᴇʀ : ${BOT_INFO.split(";")[1]}
+•  ⭕ ᴍᴏᴅᴇ : ${WORK_TYPE}
+•  💫 ᴘʀᴇғɪx : ${HANDLERS}
 •  date : ${date}
 •  time : ${time}
 •  uptime : ${await m.uptime()}
-•  plugins : ${commands.length}\n ${readMore}\n\n`
+╰─────────────━┈⊷\n ${readMore}\n\n`
             let cmnd = [];
             let Sparky;
             let type = [];
