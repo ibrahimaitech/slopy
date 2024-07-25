@@ -1,12 +1,12 @@
 {
-  "name": "X-BOT-MD",
+  "name": "sloty-md",
   "version": "3.2.0",
   "description": "WhatsApp Helper Bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start . --attach --name X-BOT-MD",
-    "stop": "pm2 stop . --attach --name X-BOT-MD"
+    "start": "pm2 start . --attach --name ibrahim",
+    "stop": "pm2 stop . --attach --name ibrahim"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "bot",
     "whatsapp"
   ],
-  "author": "ASWIN SPARKY",
+  "author": "Ibrahim Adams",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
